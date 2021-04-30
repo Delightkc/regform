@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+
+}
+tr:hover {background-color: #f5f5f5;}
+
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.resetbtn {
+  background-color: #08090a;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+</style>
+</head>
+<body>
+    <center><h1>WEBINAR REGISTRATION FORM</h1></center>
+   
+    <center><p><img src="logo.jpeg" alt="Smiley face" width="120" height="140" style="float:left"> Welcome to the Webinar Series organized by CODE@SAINTGITS CLUB of Saintgits College of Engineering, Kottayam</p></center><br>
+    <table border="1" align="center"
+width="25%" height="25%">
+<caption>PROGRAM SCHEDULE</caption>
+<tr>
+<th>Date</th>
+<th>Course Name</th>
+<th>Time Slots</th>
+</tr>
+<tr>
+<td>17/04/21</td>
+<td>Artificial Intelligence</td>
+<td><ul>
+<li>9 AM</li>
+<li>6 PM</li>
+</ul></td>
+</tr>
+<tr>
+<td>18/04/21</td>
+<td>Ethical Hacking</td>
+<td><ul>
+<li>9 AM</li>
+<li>6 PM</li>
+</ul></td>
+</tr>
+<tr>
+</table><br>
+<br>
+     <a href="https://www.linkedin.com/company/codesaintgits">Follow us for more updates</a> 
+    <hr>
+    <h4>Plese enter your details for registration: </h4>
+    <form>
+        <label for="fname">First Name :</label>
+        <input type="text" placeholder="Enter First Name" id="fname" name="fname">
+        <br><br>
+        <label for="lname">Last Name :</label>
+        <input type="text" placeholder="Enter Last Name" id="lname" name="lname">
+        <br><br>
+        <label for="email">Email ID :</label>
+        <input type="text" placeholder="Enter mail ID" id="email" name="email" size="30px">
+        <br><br>
+        <label for="gender">Gender :</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer not to say" selected>Prefer Not to say</option>
+        </select>
+        <br><br>
+        <label for="address">Address :</label>
+        <textarea name="address" rows="4" cols="105"></textarea>
+        <br><br><br>
+        <label for="io">Institute/Company :</label>
+        <input type="text" placeholder="Enter Name" id="io" name="io" size="30px">
+        <br><br>
+        <label for="occu">Occupation :</label>
+        <select id="occu" name="occu">
+            <option value="Faculty">Faculty</option>
+            <option value="Female">Student</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br><br>
+        <label for="no">Whatsapp Number :</label>
+        <input type="text" placeholder="Enter Number" id="no" name="no">
+        <br><br>
+        <label for="date">Select Course:</label><br><br>
+        1 <select id="gender" name="gender">
+            <option value="1">17/04/21(Artificial Intelligence)</option>
+            <option value="2">18/04/21(Ethical Hacking)</option>   
+        </select>
+        <br><br>
+        <label for="hrs">Choose Time Slot :</label><br><br>
+        <input type="radio" id="1" name="1">
+        <label for="1">9 AM</label>&nbsp;&nbsp;
+        <input type="radio" id="1" name="1">
+        <label for="2">6 PM</label>&nbsp;&nbsp;
+        <input type="radio" id="1" name="1">
+        <label for="3">Not Participating</label>&nbsp;&nbsp;
+        <br><br>
+        2 <select id="gender" name="gender">
+            <option value="1">17/04/21(Artificial Intelligence)</option>
+            <option value="2">18/04/21(Ethical Hacking)</option>   
+        </select>
+        <br><br>
+        <label for="hrs">Choose Time Slot :</label><br><br>
+        <input type="radio" id="2" name="2">
+        <label for="4">9 AM</label>&nbsp;&nbsp;
+        <input type="radio" id="2" name="2">
+        <label for="5">6 PM</label>&nbsp;&nbsp;
+        <input type="radio" id="2" name="2">
+        <label for="6">Not Participating</label>&nbsp;&nbsp;
+        <br><br>
+        <label for="verification">Verification:</label><br><br>
+        <label for="myfile">Upload ID</label>
+        <input type="file" id="myfile" name="myfile">
+        <br><br>
+        <button type="button" class="registerbtn" onclick="alert('Registered Successfully! You will be contacted soon')">Submit & Register</button>&nbsp;&nbsp;&nbsp;
+        <input type="reset" class="resetbtn" value="Reset">
+    </form>
+    
+</body>
+</html>
